@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id ="address1" class="org.gfg.Address" scope="singleton" init-method="initMethodName" destroy-method="destroyMethodName">
+            <property name="city" value="Gurugram"></property>
+            <property name="state" value="Haryana"></property>
+            <property name="pincode" value="122001"></property>
+        </bean>
+       <bean id ="address2" class="org.gfg.Address">
+            <property name="city" value="Gurugram"></property>
+            <property name="state" value="Haryana"></property>
+            <property name="pincode" value="122001"></property>
+      </bean>
+      <bean id ="address3" class="org.gfg.Address">
+        <property name="city" value="Gurugram"></property>
+        <property name="state" value="Haryana"></property>
+        <property name="pincode" value="122001"></property>
+    </bean>
+
+
+</beans>
